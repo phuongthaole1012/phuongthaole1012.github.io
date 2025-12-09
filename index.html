@@ -6,99 +6,143 @@
 
     <meta name="author" content="Lê Phương Thảo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- PASTEL BEIGE STYLE -->
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #F7EFE5;        /* pastel beige */
+        color: #3d3d3d;
+        line-height: 1.65;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        color: #5a524d;
+        border-left: 5px solid #C8AE9D;
+        padding-left: 10px;
+      }
+
+      .name {
+        font-size: 38px;
+        font-weight: 700;
+        color: #4a413d;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #a86e56;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .card {
+        background: #FFF7F0;
+        padding: 22px;
+        border-radius: 16px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+        margin-bottom: 24px;
+      }
+
+      img {
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      ul li {
+        margin-bottom: 6px;
+      }
+
+      .icon {
+        margin-right: 6px;
+        color: #b58874;
+      }
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+    <table style="width:100%;max-width:800px;border:0;margin:40px auto;">
       <tbody>
         <tr>
           <td>
 
             <!-- Profile header -->
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
+            <div class="card">
+              <table style="width:100%;">
                 <tr>
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <td style="width:63%;vertical-align:middle; padding-right:20px;">
                     <p class="name" style="text-align:center;">
                       Lê Phương Thảo
                     </p>
-                    <p>
-                      Sinh viên năm tư ngành Kinh tế đối ngoại tiêu chuẩn - Đại học Ngoại thương
+                    <p style="text-align:center;font-size:15px;color:#5f5752;">
+                      Sinh viên năm tư ngành <b>Kinh tế đối ngoại</b> – Đại học Ngoại thương
                     </p>
-                    <p style="text-align:center">
+
+                    <p style="text-align:center;margin-top:15px;">
+                      <i class="fa-solid fa-envelope icon"></i>
                       <a href="mailto:getzeduck@gmail.com">Email</a> &nbsp;/&nbsp;
+
+                      <i class="fa-solid fa-file icon"></i>
                       <a href="data/cv.pdf.jpg">CV</a> &nbsp;/&nbsp;
+
+                      <i class="fa-solid fa-id-card icon"></i>
                       <a href="data/doggo.jpg">Bio</a> &nbsp;/&nbsp;
+
+                      <i class="fa-brands fa-github icon"></i>
                       <a href="https://github.com/getzduck/">Github</a>
                     </p>
                   </td>
 
-                  <td style="padding:2.5%;width:37%;max-width:37%">
+                  <td style="width:37%;text-align:center;">
                     <a href="images/1_nam.jpg">
-                      <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" 
-                           alt="profile photo" src="images/1_nam.jpg">
+                      <img src="images/1_nam.jpg" style="width:100%;object-fit:cover;">
                     </a>
                   </td>
                 </tr>
-              </tbody>
-            </table>
+              </table>
+            </div>
 
             <!-- Skills -->
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Kĩ năng</h2>
-                    <ul style="margin-top:0;">
-                      <li>Tiếng Anh giao tiếp</li>
-                      <li>Tiếng Anh chuyên ngành</li>
-                      <li>Tin học văn phòng</li>
-                      <li>Sử dụng Canva</li>
-                      <li>Sử dụng Wix</li>
-                      <li>Sử dụng Capcut</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="card">
+              <h2><i class="fa-solid fa-wand-magic-sparkles icon"></i>Kĩ năng</h2>
+              <ul>
+                <li>Tiếng Anh giao tiếp</li>
+                <li>Tiếng Anh chuyên ngành</li>
+                <li>Tin học văn phòng</li>
+                <li>Sử dụng Canva</li>
+                <li>Sử dụng Wix</li>
+                <li>Sử dụng Capcut</li>
+              </ul>
+            </div>
 
             <!-- Contact -->
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:16px;width:100%;vertical-align:middle">
-                    <h2>Contact</h2>
-                    <p>
-                      Facebook: <a href="LINK_FACEBOOK_CỦA_M">link</a><br>
-                      Gmail: <a href="mailto:getzeduck@gmail.com">getzeduck@gmail.com</a>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="card">
+              <h2><i class="fa-solid fa-phone icon"></i>Contact</h2>
+              <p style="font-size:15px;">
+                <i class="fa-brands fa-facebook icon"></i>
+                Facebook: <a href="https://web.facebook.com/le.phuong.thao.540082">link</a><br>
 
-            <!-- Student Projects -->
-            <table style="width:100%;margin:0 auto;border:0;padding:16px;">
-              <tbody>
-                <tr><td><h2>Dự án sinh viên</h2></td></tr>
-              </tbody>
-            </table>
+                <i class="fa-solid fa-envelope icon"></i>
+                Gmail: <a href="mailto:phuongthaoclover3011@gmail.com"></a>
+              </p>
+            </div>
+
+            <!-- Projects -->
+            <div class="card">
+              <h2><i class="fa-solid fa-lightbulb icon"></i>Dự án sinh viên</h2>
+              <p>Dự án PR sản phẩm nến và hoa</p>
+            </div>
 
             <!-- Footer -->
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0;">
-                    <br>
-                    <p style="text-align:right;font-size:small;">
-                      Thank you for your bonus points !!!
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <p style="text-align:right;font-size:12px;margin-top:10px;color:#7a6f69;">
+              Thank you for your bonus points !!!
+            </p>
 
           </td>
         </tr>
